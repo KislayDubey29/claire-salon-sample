@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Clairé Women’s Atelier — a private salon experience." />
+    <title>Clairé | Women’s Hair & Beauty Atelier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement">A private beauty space, designed entirely for women <span>•</span> New guest offer: 15% off your first ritual</div>
+    <header class="site-header">
+      <a href="#home" class="brand" aria-label="Clairé home"><span>clairé</span><small>women's atelier</small></a>
+      <nav aria-label="Main navigation">
+        <a href="#story">Our story</a>
+        <a href="#services">Services</a>
+        <a href="#membership">Rewards</a>
+        <a href="#journal">Journal</a>
+      </nav>
+      <div class="header-actions">
+        <button class="text-button" id="openLogin">My Clairé <span class="user-dot"></span></button>
+        <a class="button button-dark" href="#booking">Book a ritual <span>↗</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=2000&q=85">
+          <source src="https://cdn.coverr.co/videos/coverr-hairdressing-1577/1080p.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow light">Hair · skin · stillness</p>
+          <h1>A little time<br />that feels like <em>yours.</em></h1>
+          <p class="hero-copy">Thoughtful hair and beauty rituals in a serene, women-only space in the heart of the city.</p>
+          <div class="hero-ctas"><a class="button button-cream" href="#booking">Reserve your chair <span>↗</span></a><button class="play-link" id="showFilm"><i>▶</i> Watch our atelier film</button></div>
+        </div>
+        <div class="scroll-note"><span></span> Scroll to discover</div>
+        <div class="hero-badge"><strong>4.9/5</strong><span>by 1,200+ women<br />who chose themselves</span></div>
+      </section>
+
+      <section class="intro section-pad" id="story">
+        <div class="intro-heading"><p class="eyebrow">More than an appointment</p><h2>Beautiful hair begins with feeling <em>seen.</em></h2></div>
+        <div class="intro-copy"><p>Clairé is a calm, considered salon for women who want expertise without the rush. Every appointment begins with a consultation, and ends with you feeling unmistakably yourself.</p><a href="#services" class="arrow-link">Meet our rituals <span>→</span></a></div>
+      </section>
+
+      <section class="feature-grid">
+        <figure class="feature-large"><img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=1400&q=85" alt="Woman receiving a hair treatment" /><figcaption><span>01</span> Your hair, understood</figcaption></figure>
+        <div class="feature-copy"><p class="eyebrow">The Clairé way</p><h2>Unhurried care.<br /><em>Exceptional craft.</em></h2><p>From the first cup of tea to the final mirror moment, our artists tailor every detail to your hair, your lifestyle, and the way you want to feel.</p><a href="#booking" class="button button-outline">Find your ritual <span>↗</span></a></div>
+        <figure class="feature-small"><img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=1000&q=85" alt="A woman in a beauty salon" /></figure>
+      </section>
+
+      <section class="services section-pad" id="services">
+        <div class="section-top"><div><p class="eyebrow">Our menu</p><h2>Made for your <em>mood.</em></h2></div><p>Every service is finished with a signature blow-dry and a moment to simply be.</p></div>
+        <div class="service-tabs" role="tablist"><button class="active" data-category="hair">Hair</button><button data-category="colour">Colour</button><button data-category="care">Care & beauty</button></div>
+        <div class="service-list" id="serviceList"></div>
+        <a href="#booking" class="arrow-link centered">View the complete ritual menu <span>→</span></a>
+      </section>
+
+      <section class="membership" id="membership">
+        <div class="membership-copy"><p class="eyebrow light">The Clairé circle</p><h2>Your rituals<br />should give <em>back.</em></h2><p>Earn petals every time you visit, shop or simply sign in. Redeem them for your favourite services, care products, and little upgrades on us.</p><button class="button button-cream" id="membershipLogin">See your petals <span>↗</span></button></div>
+        <div class="loyalty-card"><div class="card-top"><span>CLAIRÉ CIRCLE</span><i>✦</i></div><div class="card-name" id="cardName">YOUR BEAUTY, REWARDED</div><div class="card-points"><strong id="cardPoints">0</strong><span>petals</span></div><div class="card-bottom"><span>MEMBER SINCE 2026</span><span>CL- •••• 4812</span></div></div>
+      </section>
+
+      <section class="booking section-pad" id="booking">
+        <div class="booking-intro"><p class="eyebrow">Your moment awaits</p><h2>Let’s make time<br />for <em>you.</em></h2><p>Choose a service and preferred time. We’ll reach out to confirm the perfect artist for your appointment.</p><div class="contact-mini"><span>Call us</span><a href="tel:+919876543210">+91 98765 43210</a><span>Write to us</span><a href="mailto:hello@claireatelier.in">hello@claireatelier.in</a></div></div>
+        <form class="booking-form" id="bookingForm">
+          <label>What are you in the mood for?<select required><option value="">Select a ritual</option><option>Signature Cut & Style</option><option>Gloss & Dimension Colour</option><option>Clairé Hair Spa</option><option>Bridal Consultation</option></select></label>
+          <div class="form-row"><label>Your name<input required type="text" placeholder="First and last name" /></label><label>Mobile number<input required type="tel" placeholder="+91" /></label></div>
+          <div class="form-row"><label>Ideal date<input required type="date" /></label><label>Preferred time<select required><option value="">Choose a time</option><option>10:00 AM</option><option>1:00 PM</option><option>4:00 PM</option><option>6:30 PM</option></select></label></div>
+          <button class="button button-dark" type="submit">Request an appointment <span>↗</span></button><p class="form-note">By sending this, you agree to be contacted about your appointment.</p>
+        </form>
+      </section>
+
+      <section class="journal" id="journal"><div class="journal-title"><p class="eyebrow">From our journal</p><h2>Beauty, in<br /><em>conversation.</em></h2><a href="#" class="arrow-link">Explore all stories <span>→</span></a></div><a class="journal-card" href="#"><img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1000&q=85" alt="Woman with healthy hair" /><p>Hair notes</p><h3>The five-minute ritual for softer, shinier lengths</h3><span>Read story →</span></a><a class="journal-card offset" href="#"><img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1000&q=85" alt="Salon tools and beauty products" /><p>At the atelier</p><h3>Why every colour journey starts with a conversation</h3><span>Read story →</span></a></section>
+    </main>
+
+    <footer><div class="footer-top"><a href="#home" class="brand"><span>clairé</span><small>women's atelier</small></a><p>Good hair. Softer days.<br />A space made for women.</p><div><a href="#">Instagram</a><a href="#">Pinterest</a><a href="#">WhatsApp</a></div><a class="button button-cream" href="#booking">Book your ritual <span>↗</span></a></div><div class="footer-bottom"><span>© 2026 Clairé Women’s Atelier</span><span>Designed as a sample salon experience</span><span>Privacy · Terms</span></div></footer>
+
+    <div class="modal" id="loginModal" aria-hidden="true"><div class="modal-box"><button class="close-modal" aria-label="Close">×</button><div class="modal-art"><p>CLAIRÉ<br />CIRCLE</p><span>✦</span></div><div class="modal-content" id="loginContent"><p class="eyebrow">Welcome to your circle</p><h2>More beauty<br /><em>in every visit.</em></h2><p class="modal-lead">Sign in to see your petals and unlock thoughtful rewards.</p><form id="loginForm"><label>Email address<input type="email" required placeholder="you@example.com" /></label><label>Password<input type="password" required placeholder="••••••••" /></label><button class="button button-dark" type="submit">Sign in to Clairé <span>→</span></button></form><p class="signup-text">New to Clairé? <a href="#">Create your account</a></p></div></div></div>
+    <div class="toast" id="toast"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
